@@ -1,0 +1,48 @@
+﻿<Window x:Class="Syllabus.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfIntro="clr-namespace:Syllabus" Title="Generator Sylabusów" Width="401" Height="425">
+
+    <TabControl Margin="20">
+        <TabItem FontSize="15" Header="Miejsce zapisu" Margin="0,0,0,0">
+            <Grid Margin="10,-16,-10,16">
+                <Button x:Name="Choose" Content="Wybierz" HorizontalAlignment="Left" Margin="66,191,0,0" VerticalAlignment="Top" Width="190" Click="Choose_Click" Height="43" RenderTransformOrigin="0.247,1.093"/>
+                <TextBlock x:Name="location" HorizontalAlignment="Left" Margin="23,90,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="One" FontSize="15" Header="Pojedynczy sylabus" Visibility="Hidden">
+            <Grid Margin="10,-16,-10,16">
+
+                <Button x:Name="Button" Content="Generuj" HorizontalAlignment="Left" Margin="66,242,0,0" VerticalAlignment="Top" Width="190" Click="Button_Click" Height="43" RenderTransformOrigin="0.247,1.093"/>
+                <ComboBox x:Name="Course" HorizontalAlignment="Left" Margin="89,86,0,0" VerticalAlignment="Top" Width="120"/>
+                <ComboBox x:Name="Language" HorizontalAlignment="Left" Margin="89,187,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBoxItem IsSelected="True">Polski</ComboBoxItem>
+                    <ComboBoxItem>Angielski</ComboBoxItem>
+                </ComboBox>
+                <TextBlock x:Name="Text" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                <ComboBox x:Name="Symbol" HorizontalAlignment="Left" Margin="89,140,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBoxItem IsSelected="True" >A</ComboBoxItem>
+                    <ComboBoxItem>B</ComboBoxItem>
+                    <ComboBoxItem>C</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </TabItem>
+        <TabItem x:Name="More" FontSize="15" Header="Grupa sylabusów" Visibility="Hidden">
+            <Grid Margin="10,-16,-10,16">
+
+                <ComboBox x:Name="Language2" HorizontalAlignment="Left" Margin="89,187,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBoxItem IsSelected="True">Polski</ComboBoxItem>
+                    <ComboBoxItem>Angielski</ComboBoxItem>
+                </ComboBox>
+                <TextBox x:Name="Code_text" HorizontalAlignment="Left" Margin="89,86,0,0" VerticalAlignment="Top" Width="120"/>
+                <ComboBox x:Name="Symbol2" HorizontalAlignment="Left" Margin="89,140,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem IsSelected="True" >A</ComboBoxItem>
+                <ComboBoxItem>B</ComboBoxItem>
+                    <ComboBoxItem>C</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="Button2" Content="Generuj" HorizontalAlignment="Left" Margin="66,242,0,0" VerticalAlignment="Top" Width="190" Click="Button2_Click" Height="43" RenderTransformOrigin="0.247,1.093"/>
+                <TextBlock x:Name="Text2" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+
+</Window>
